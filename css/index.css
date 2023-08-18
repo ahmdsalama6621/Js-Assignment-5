@@ -1,0 +1,192 @@
+/* Global properties*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    background-color: #1e202b;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.w-40 {
+    width: 40%;
+}
+.w-80 {
+    width: 80%;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+/*Navigation Bar*/
+nav{
+    background-color: #1e202b;
+}
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%283250, 250, 250, 250.100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-brand{
+    color: white;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size:14px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #009ad8;
+    padding: 3px 20px;
+
+
+}
+.active{
+    color: #009ad8;
+    border: 2px solid  #009ad8;
+    border-radius: 25px;
+}
+.nav-item{
+    padding: 15px;
+}
+
+.nav-link{
+    color: white;
+}
+.navbar-nav , .navbar-nav .nav-link.show{
+    color: #009ad8;
+    padding: 3px 50px;
+
+}
+
+/* End of Navigation Bar*/
+
+
+/* weather input and table */
+section{
+    background-image: url(banner.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+}
+.container form {
+    position: relative;
+}
+#find {
+    border-radius: 50px;
+    bottom: 5px;
+    background-color: rgb(0, 154, 216);
+    color: white;
+    border: none;
+    width: 120px;
+    height: 85%;
+    right: 5px;
+
+}
+
+
+
+.form-control {
+    position: relative;
+    background-color: #1e202b;
+    padding: 20px 50px 20px 20px;
+    border-radius: 35px;
+    border: none;
+    color: white;
+}
+.form-control:focus{
+    background-color: #1e202b;
+    box-shadow: none;
+    color: white;
+}
+.form-control::placeholder{
+    color: gray;
+}
+
+
+.card{
+    background-color: #323544;
+}
+
+.card-header{
+    background-color: #1e202b;
+}
+/* End ( weather input and table) */
+
+/* Footer */
+footer{
+    background-color: #262936;
+    padding-bottom: 5%;
+    position: relative;
+
+}
+
+#social-icons i{
+    color: #009ad8;
+    background-color: #1e202b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 12px;
+}
+
+#social-icons i:hover{
+    background-color: #009ad8;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+footer .row  form {
+    position: relative;
+}
+#subscribe{
+    border-radius: 50px;
+    bottom: 5px;
+    background-color: rgb(0, 154, 216);
+    color: white;
+    border: none;
+    width: 120px;
+    height: 85%;
+    right: 8px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+
+        margin-top: 830px;
+    }
+
+}
+
+
+/* start contact  */
+.div {
+    width: 100%;
+    height: 70px;
+    background-color: #262936;
+    border-radius: 50px;
+}
+.contact .row .info {
+    height: 400px;
+    background-color: #262936;
+    border-radius: 10px;
+    
+}
+.contact .row input,
+.contact .row textarea {
+    border: 4px solid #383b49 !important;
+    border-radius: 40px !important;
+    padding: 15px;
+    transition: .5s;
+}
+.contact .row input:hover,
+.contact .row textarea:hover {
+    border-color: #009ad8 !important;
+}
+.contact .row input:focus,
+.contact .row textarea:focus {
+    outline: #009ad8 !important;
+}
+/* end contact  */
